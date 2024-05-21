@@ -1,1 +1,1 @@
-# worldbetting-assessment
+# World Betting Assessment
