@@ -1,9 +1,8 @@
 - ![Version](https://img.shields.io/github/v/release/Mphozazo/REPOSITORY.svg)
-- ![Dependencies](https://img.shields.io/david/Mphozazo/REPOSITORY.svg)
 - ![Downloads](https://img.shields.io/github/downloads/Mphozazo/REPOSITORY/worldbetting-assessment.svg)
 - ![Contributors](https://img.shields.io/github/contributors/Mphozazo/REPOSITORY.svg)
 - ![Code Size](https://img.shields.io/github/languages/code-size/Mphozazo/REPOSITORY.svg)
-- 
+
 # World Betting Assessment
 
 The proiejct is the solution for world betting assessment .
