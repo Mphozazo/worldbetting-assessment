@@ -1,21 +1,19 @@
 # World Betting Assessment
 
-# Project Title
-
 ![Build Status](https://github.com/USERNAME/REPOSITORY/workflows/WORKFLOW_NAME/badge.svg)
 ![License](https://img.shields.io/github/license/USERNAME/REPOSITORY.svg)
 ![Coverage](https://coveralls.io/repos/github/USERNAME/REPOSITORY/badge.svg?branch=main)
 ![Version](https://img.shields.io/github/v/release/USERNAME/REPOSITORY.svg)
 ![Dependencies](https://img.shields.io/david/USERNAME/REPOSITORY.svg)
-![Downloads](https://img.shields.io/github/downloads/USERNAME/REPOSITORY/total.svg)
 ![Contributors](https://img.shields.io/github/contributors/USERNAME/REPOSITORY.svg)
-![Code Size](https://img.shields.io/github/languages/code-size/USERNAME/REPOSITORY.svg)
+
 
 A brief description of what your project does and who it's for.
 
 ## Installation
 
-Instructions for how to get a copy of the project running on your local machine.
+The project is using Visual Studion 2023 (.Net 8 ).
+Get the master from the current repository
 
 ## Usage
 
