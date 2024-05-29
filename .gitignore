@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/worldbetting-assessment/FileContentIndex/2ba18e83-028f-4f58-b609-4852d64aaa82.vsidx
+/.vs/worldbetting-assessment/v17/.wsuo
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
+.vs/
+/WorldBetting.Assessment/WoldBetting.Assessment.Models/bin/
+/WorldBetting.Assessment/WoldBetting.Assessment.Models/obj/
+/WorldBetting.Assessment/WorldBetting.Assessment.Web.Api/bin/
+/WorldBetting.Assessment/WorldBetting.Assessment.Web.Api/obj/
+*.pdb
+*.dll
+*.cache
+/WorldBetting.Assessment/WorldBetting.Assessment.Core/obj/project.assets.json
