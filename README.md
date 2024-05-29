@@ -1,14 +1,16 @@
+- ![Version](https://img.shields.io/github/v/release/Mphozazo/REPOSITORY.svg)
+- ![Dependencies](https://img.shields.io/david/Mphozazo/REPOSITORY.svg)
+- ![Downloads](https://img.shields.io/github/downloads/Mphozazo/REPOSITORY/worldbetting-assessment.svg)
+- ![Contributors](https://img.shields.io/github/contributors/Mphozazo/REPOSITORY.svg)
+- ![Code Size](https://img.shields.io/github/languages/code-size/Mphozazo/REPOSITORY.svg)
+- 
 # World Betting Assessment
 
-![Build Status](https://github.com/USERNAME/REPOSITORY/workflows/WORKFLOW_NAME/badge.svg)
-![License](https://img.shields.io/github/license/USERNAME/REPOSITORY.svg)
-![Coverage](https://coveralls.io/repos/github/USERNAME/REPOSITORY/badge.svg?branch=main)
-![Version](https://img.shields.io/github/v/release/USERNAME/REPOSITORY.svg)
-![Dependencies](https://img.shields.io/david/USERNAME/REPOSITORY.svg)
-![Contributors](https://img.shields.io/github/contributors/USERNAME/REPOSITORY.svg)
+The proiejct is the solution for world betting assessment .
 
-
-A brief description of what your project does and who it's for.
+## Note 
+The project and solution is not fully function due to the following :
+ 
 
 ## Installation
 
