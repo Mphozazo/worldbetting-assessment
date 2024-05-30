@@ -15,3 +15,11 @@
 *.dll
 *.cache
 /WorldBetting.Assessment/WorldBetting.Assessment.Core/obj/
+*.Up2Date
+*.txt
+*.props
+*.targets
+/WorldBetting.Assessment/WorldBetting.Assessment.WebAPI.Tests/bin/
+/WorldBetting.Assessment/files/
+/WorldBetting.Assessment/WorldBetting.Assessment.WebAPI.Tests/bin/
+/WorldBetting.Assessment/WorldBetting.Assessment.WebAPI.Tests/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
