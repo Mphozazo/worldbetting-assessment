@@ -12,6 +12,7 @@ The project and solution is not fully function due to the following (This are no
  - The main problem I have personal laptop which is home window OS version ( Only I can used Docker for Lunix for windows not able to run properly)
  - The MySQL image also not able to work so that I can't connect MySQL workbench .
  - .Net 8 haven't used it as mostlhy was still on .Net 5 (so had to get some undestadiong of how the framework works first with little time ).
+ - Not able ton get into UI for the API
  
 It's fair that I be excluded on this application    
 
