@@ -1,8 +1,8 @@
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Serilog;
-using WorldBetting.Assessment.Web.Api;
 using WoldBetting.Assessment.Models;
-using Microsoft.Extensions.Options;
+using WorldBetting.Assessment.Web.Api;
 
 var builder = WebApplication.CreateBuilder(args);
 // Load configurations
@@ -34,6 +34,7 @@ builder.Services.AddSingleton(resolver =>
     resolver.GetRequiredService<IOptions<HttpClientSettings>>().Value);
 
 // Add and configure the HttpClient
+#warning -  problem config file is not properly bind and suspect the enviroment is not loaded at the top .
 builder.Services.AddHttpClient("ExchangeRateApi", (serviceProvider, client) =>
 {
     var config = serviceProvider.GetRequiredService<HttpClientSettings>().ExchangeRateSettingsConfig;

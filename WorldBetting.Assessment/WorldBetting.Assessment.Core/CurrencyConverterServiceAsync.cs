@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Options;
+﻿using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using System.Net.Http;
 using System.Text.Json;
 using WoldBetting.Assessment.Models;
@@ -10,8 +11,9 @@ namespace WorldBetting.Assessment.Core
     {
         private readonly HttpClient httpClient;
         private readonly string apiKey;
+        private readonly ILogger<CurrencyConverterServiceAsync> logger;
 
-        public CurrencyConverterServiceAsync(IOptions<HttpClientSettings> _settings, IHttpClientFactory _httpClientFactory)
+        public CurrencyConverterServiceAsync(ILogger<CurrencyConverterServiceAsync> _logger ,  IOptions<HttpClientSettings> _settings, IHttpClientFactory _httpClientFactory)
         {
             httpClient = _httpClientFactory.CreateClient("ExchangeRateApi");
             apiKey = _settings.Value.ExchangeRateSettingsConfig.ApiKey;
@@ -19,18 +21,30 @@ namespace WorldBetting.Assessment.Core
 
         public async Task<decimal> GetExchangeRateAsync(string fromCurrency, string toCurrency)
         {
+            try
+            {
 
-            var response = await httpClient.GetStringAsync($"/latest/{apiKey}/{fromCurrency}");
+                // first check if the cache still has the currency available 
 
+                // only do this when cache doesn't have currency available
+                #warning HttpClient not initiated corerctly to call the API 
+                var response = await httpClient.GetStringAsync($"/latest/{apiKey}/{fromCurrency}");
+                var data = JsonSerializer.Deserialize<ExchangeRateResponse>(response);
 
+                return data == null ? throw new Exception("Unable to extract the exchange currency as data is null.") : data.Rates[toCurrency];
+            }
+            catch (Exception ex)
+            {
 
-            var data = JsonSerializer.Deserialize<ExchangeRateResponse>(response);
-            return data.Rates[toCurrency];
+                logger.LogError(ex.Message);
+            }
+            return 0;
         }
 
-        private class ExchangeRateResponse
+        public Task<bool> SaveHistoryToDatabase(string ToCurency, decimal exRate)
         {
-            public Dictionary<string, decimal> Rates { get; set; }
+            // unable to get this tested as my MySQL is not working and not aving time to fix it . 
+            throw new NotImplementedException();
         }
     }
 }

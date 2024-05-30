@@ -10,5 +10,6 @@ namespace WoldBetting.Assessment.Models.Interfaces
     {
         Task<decimal> GetExchangeRateAsync(string fromCurrency, string toCurrency);
 
+        Task<bool> SaveHistoryToDatabase(string ToCurency, decimal exRate);
     }
 }

@@ -7,12 +7,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldBetting.Assessment.Web
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WoldBetting.Assessment.Models", "WoldBetting.Assessment.Models\WoldBetting.Assessment.Models.csproj", "{09C4557A-CD1C-4A52-A82D-327C8BF9C79A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldBetting.Assessment.Core", "WorldBetting.Assessment.Core\WorldBetting.Assessment.Core.csproj", "{84EA2B89-CA4E-408A-B17D-BB2101800AE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldBetting.Assessment.Core", "WorldBetting.Assessment.Core\WorldBetting.Assessment.Core.csproj", "{84EA2B89-CA4E-408A-B17D-BB2101800AE4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FB08B04F-7D85-4EAF-A582-7C8154838EC6}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{28E4870A-92E8-46FC-B684-42DED757CB52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldBetting.Assessment.WebAPI.Tests", "WorldBetting.Assessment.WebAPI.Tests\WorldBetting.Assessment.WebAPI.Tests.csproj", "{EF0FF298-5EA0-4F4A-8E76-84312669FD50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -88,6 +92,26 @@ Global
 		{84EA2B89-CA4E-408A-B17D-BB2101800AE4}.Release|x64.Build.0 = Release|Any CPU
 		{84EA2B89-CA4E-408A-B17D-BB2101800AE4}.Release|x86.ActiveCfg = Release|Any CPU
 		{84EA2B89-CA4E-408A-B17D-BB2101800AE4}.Release|x86.Build.0 = Release|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Debug|ARM.Build.0 = Debug|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Debug|x64.Build.0 = Debug|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Debug|x86.Build.0 = Debug|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Release|ARM.ActiveCfg = Release|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Release|ARM.Build.0 = Release|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Release|ARM64.Build.0 = Release|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Release|x64.ActiveCfg = Release|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Release|x64.Build.0 = Release|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Release|x86.ActiveCfg = Release|Any CPU
+		{EF0FF298-5EA0-4F4A-8E76-84312669FD50}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

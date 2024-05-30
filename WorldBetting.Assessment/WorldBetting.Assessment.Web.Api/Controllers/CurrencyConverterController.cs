@@ -11,9 +11,11 @@ namespace WorldBetting.Assessment.Web.Api.Controllers
     public class CurrencyConverterController : ControllerBase
     {
         public readonly ICurrencyConverterAsync currencyService;
+        public readonly ILogger<CurrencyConverterController> logger;
 
-        public CurrencyConverterController(ICurrencyConverterAsync _currencyService ) {
+        public CurrencyConverterController(ICurrencyConverterAsync _currencyService, ILogger<CurrencyConverterController> _logger) {
             currencyService = _currencyService;
+            logger = _logger;
         }
 
         [HttpPost]
@@ -45,6 +47,9 @@ namespace WorldBetting.Assessment.Web.Api.Controllers
                     Success = true
                 };
 
+                // save data in history table in DB 
+                var savedToHistory = currencyService.SaveHistoryToDatabase(request.ToCurrency , exchangeRate);
+
                 return Ok(response);
             }
             catch (Exception ex)
@@ -53,8 +58,10 @@ namespace WorldBetting.Assessment.Web.Api.Controllers
                 {
                     Data = ex.Message ,
                     Success = false,
-                    Message = "Currency Convertion Fails."
+                    Message = "Currency Convertion Call Fails."
                 };
+                logger.LogError(ex.Message);
+
                 return StatusCode(StatusCodes.Status500InternalServerError, error);
 
             }
