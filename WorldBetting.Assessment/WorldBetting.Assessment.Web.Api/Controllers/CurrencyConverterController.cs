@@ -20,6 +20,9 @@ namespace WorldBetting.Assessment.Web.Api.Controllers
 
         [HttpPost]
         [Route("convert")]
+        [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(BaseResponse), StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> ConvertCurrency([FromBody] ConvertRequest request)
         {
             try
