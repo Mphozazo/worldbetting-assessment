@@ -18,8 +18,7 @@ namespace WorldBetting.Assessment.Web.Api.Controllers
             logger = _logger;
         }
 
-        [HttpPost]
-        [Route("convert")]
+        [HttpPost("convert")]
         [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(BaseResponse), StatusCodes.Status500InternalServerError)]
